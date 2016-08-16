@@ -1,0 +1,78 @@
+
+
+
+@font-face {
+	font-family :OpenSans-Bold;
+	src: url(../fonts/OpenSans-Bold.ttf)
+}
+
+@font-face {
+	font-family :OpenSans-BoldItalic;
+	src: url(../fonts/OpenSans-BoldItalic.ttf)
+}
+@font-face {
+	font-family :OpenSans-Light;
+	src: url(../fonts/OpenSans-Light.ttf)
+}
+
+@font-face {
+	font-family :OpenSans-LightItalic;
+	src: url(../fonts/OpenSans-LightItalic.ttf)
+}
+
+body{
+	font-size: 16px;
+	color: #ffffff;
+	background: #000000;
+	font-family: 'OpenSans-Light';
+}
+
+footer{
+	color:#c2c2c2;
+}
+
+
+.pic img {
+	height: 15rem;
+	width:100%;
+}
+
+
+.abstract{
+	display:none;
+}
+
+.original:hover .abstract {
+	display: block;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+.change-height{
+	height: 5rem;
+}
+
+.landing {
+	margin-bottom: 2rem;
+}
+
+@media all and (max-width: 1000px) {
+		.original {
+			width: calc(100%/3);
+		}
+		.landing img {
+		margin-top: 2%;
+		}
+}
+
+@media screen and (max-width: 600px) {
+    .original {
+				width: calc(100%/2);
+    }
+    .landing img {
+		margin-top: 3%;
+		}
+}

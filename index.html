@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Instanews App</title>
+</head>
+<script type="text/javascript" src="scripts/jquery-3.1.0.js"></script>
+<script src="scripts/scripts.js"></script>
+<link rel="stylesheet" type="text/css" href="css/foundation.css">
+<link rel="stylesheet" href="css/style.css">
+<body>
+	<div class="landing full-height flex-container">
+	<img src="images/nyt-logo.svg">
+	<div class="select-section flex-container column justify-center">
+		<p>Choose a section</p>
+		<select id="sectSelect">
+			<option value="">Select...</option>
+			<option value="home">Home</option>
+			<option value="opinion">Opinion</option>
+			<option value="world">World</option>
+			<option value="national">National</option>
+			<option value="technology">Technology</option>
+			<option value="science">Science</option>
+			<option value="health">Health</option>
+			<option value="sports">Sports</option>
+			<option value="books">Books</option>
+			<option value="movies">Movies</option>
+		</select>
+	</div>
+	</div>
+		<div class="overlay flex-container wrap">
+			<div class="original col-1-4">
+				<div class="pic"></div>
+				<div class="abstract margin-left-lg margin-right-lg"></div>
+			</div>
+		</div>
+		<footer class="fixed"></footer>
+</body>
+</html>
