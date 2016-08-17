@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log("ready");
 		$('.overlay').hide()
-		var optText = $("select").on('change',function(){
+		$("select").on('change',function(){
 			$('.overlay').show()
 			$('.landing').removeClass("full-height").addClass("change-height")
 			console.log(this.value);
@@ -23,20 +23,15 @@ $(document).ready(function(){
 			if (typeof(value.multimedia[0]) !== undefined && value.multimedia.length !==0) {
 				var photoURL = (value.multimedia[4].url)
 				clone.children(".abstract").text(abstract);
-				clone.children(".pic").append('<a href= "'+articleURL+'" >  <img src="'+ photoURL +'"> </a>');
+				clone.children(".pic").append('<a href= "'+articleURL+'" ><img src="'+ photoURL +'"></a>');
 			}
 			else {
 				return;
 			}
 
-		// $('.abstract').hide();
 		original.remove();
 		
-		// var i=0
-		// $('.original').each(function(i){
-		// 	$(this).attr('id', 'item' +(i+1))
-		// })
-
+	
 		if($('.original').length <12){
 		$('.overlay').append(clone)
 		}
